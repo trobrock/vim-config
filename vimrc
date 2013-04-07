@@ -52,6 +52,8 @@ Bundle "tpope/vim-dispatch"
 Bundle "tpope/vim-rails"
 " Bundler integration
 Bundle "tpope/vim-bundler"
+" Rust support
+Bundle "bryanjswift/vim-rust"
 
 " Configure ctrlp
 let g:ctrlp_map = '<Leader>t'

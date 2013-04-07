@@ -46,6 +46,8 @@ Bundle "nanki/treetop.vim"
 Bundle "kchmck/vim-coffee-script"
 " Thrift
 Bundle "sprsquish/thrift.vim"
+" Send commands to tmux
+Bundle "tpope/vim-dispatch"
 
 " Configure ctrlp
 let g:ctrlp_map = '<Leader>t'

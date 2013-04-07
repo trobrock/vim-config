@@ -48,12 +48,20 @@ Bundle "kchmck/vim-coffee-script"
 Bundle "sprsquish/thrift.vim"
 " Send commands to tmux
 Bundle "tpope/vim-dispatch"
+" Rail integration
+Bundle "tpope/vim-rails"
+" Bundler integration
+Bundle "tpope/vim-bundler"
 
 " Configure ctrlp
 let g:ctrlp_map = '<Leader>t'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = 'vendor/\(gems\|cache\|bin\|bundler\|doc\|specifications\)'
 map <Leader>b :CtrlPBuffer<CR>
+
+" Configure rails.vim
+map <Leader>r :.Rake<CR>
+map <Leader>R :Rake<CR>
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start

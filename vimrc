@@ -6,7 +6,6 @@ set nocompatible
 
 " Required by vundle
 filetype off
-filetype indent plugin on
 
 " Setup vundle
 set rtp+=~/.vim/bundle/vundle/
@@ -136,6 +135,8 @@ if has("autocmd")
 else
   set autoindent    " always set autoindenting on
 endif
+
+filetype indent plugin on
 
 " Softtabs, 2 spaces
 set tabstop=2

@@ -11,6 +11,8 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Vundle
+Bundle 'gmarik/vundle'
 " Sensible defaults
 Bundle "tpope/vim-sensible"
 " Fuzzy file search
@@ -29,6 +31,10 @@ Bundle "tpope/vim-commentary"
 Bundle "tpope/vim-surround"
 " Add your ends
 Bundle "tpope/vim-endwise"
+" Paired helpers for repetitive commands
+Bundle "tpope/vim-unimpaired"
+" Send commands to tmux
+Bundle "tpope/vim-dispatch"
 " Markdown
 Bundle "tpope/vim-markdown"
 " HAML, Sass, SCSS
@@ -45,14 +51,12 @@ Bundle "nanki/treetop.vim"
 Bundle "kchmck/vim-coffee-script"
 " Thrift
 Bundle "sprsquish/thrift.vim"
-" Send commands to tmux
-Bundle "tpope/vim-dispatch"
 " Rail integration
 Bundle "tpope/vim-rails"
 " Bundler integration
 Bundle "tpope/vim-bundler"
 " Rust support
-Bundle "bryanjswift/vim-rust"
+Bundle "wting/rust.vim"
 
 " Configure ctrlp
 let g:ctrlp_map = '<Leader>t'
@@ -176,12 +180,6 @@ set wildignore+=**/log/**,*.orig,*.swp,*.rbc,*.pyc
 
 " CTRL-F will run Ag for global search
 map <C-F> :Ag!<Space>
-
-" CTRL-O will create a new line below your cursor and not be in insert mode
-map <C-O> o<Esc>
-
-" CTRL-A will create a new line above your cursor and not be in insert mode
-map <C-A> O<Esc>
 
 " Will trim all whitespace off the end of each line
 command! Respace %s/\(\s\+\)\(\n\)/\2/

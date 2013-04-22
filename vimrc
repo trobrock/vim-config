@@ -202,3 +202,7 @@ nnoremap <right> <nop>
 if filereadable(".vimrc.local")
   source .vimrc.local
 endif
+
+" Project specific vimrc
+set exrc
+set secure
